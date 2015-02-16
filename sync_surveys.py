@@ -28,8 +28,12 @@ def sync():
         for v in all_versions:
             if v.version > version:
                 version = v.version
+            v.use = False
+            v.save()
         version += 1
         meta["version"] = version
+        meta["use"] = True
+
         survey = Survey()
         for f in survey.fields:
             setattr(survey, f, meta[f])
