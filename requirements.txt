@@ -1,0 +1,3 @@
+git+git://github.com/VikParuchuri/pyyaml@HEAD#egg=pyyaml
+requests==2.5.1
+git+git://github.com/dgrtwo/ParsePy@HEAD#egg=parsepy

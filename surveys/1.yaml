@@ -1,0 +1,46 @@
+----------
+
+name: Test Survey
+description: Figure out stuff about people
+survey_number: 1
+language: english
+author: Test Guy
+
+----------
+
+type: choice_single
+question: |
+  What kind of person are you?
+options:
+  - Choice 1
+  - Choice 2
+  - Choice 3
+  - Choice 4
+next_screen:
+  - 2
+  - 2
+  - 3
+  - 3
+
+-----------
+
+type: choice_multiple
+question: |
+  What is your favorite greeting?
+options:
+  - Hi
+  - Hey
+  - What
+  - Test
+
+-----------
+
+type: text
+question: |
+  Where are you going next?
+
+-----------
+
+type: integer
+question: |
+  How many people are in your village?
